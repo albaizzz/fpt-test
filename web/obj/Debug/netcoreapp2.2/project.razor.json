@@ -2981,6 +2981,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views/Home/Form.cshtml",
+      "TargetPath": "Views/Home/Form.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views/_ViewImports.cshtml",
       "TargetPath": "Views/_ViewImports.cshtml",
       "FileKind": "mvc"
@@ -2988,6 +2993,11 @@
     {
       "FilePath": "Views/Shared/Error.cshtml",
       "TargetPath": "Views/Shared/Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Artist/Index.cshtml",
+      "TargetPath": "Views/Artist/Index.cshtml",
       "FileKind": "mvc"
     },
     {

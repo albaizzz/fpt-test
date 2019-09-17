@@ -45,6 +45,7 @@ namespace api.Controllers
 
         [HttpPost]
         [Route("{id}")]
+        [Route("")]
         public IActionResult Store([FromBody]Artist param, int id)
         {
             try

@@ -2,29 +2,67 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Models;
+using Newtonsoft.Json;
 using web.Models;
 
 namespace web.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            
-            return View();
+            var artist = new List<ArtistViewModel>();
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("http://localhost:5000");
+                var resp = await client.GetAsync("/api/artist");
+                if (resp.IsSuccessStatusCode)
+                {
+                    artist = await resp.Content.ReadAsAsync<List<ArtistViewModel>>();
+                }
+            }
+            return View(artist);
         }
 
-        public IActionResult Privacy()
+        [Route("Form/{id}")]
+        [Route("Form")]
+        public async Task<IActionResult> Form(int id)
         {
-            return View();
+            var artist = new ArtistViewModel();
+            if (id > 0){  
+                using (var client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri("http://localhost:5000");
+                    var resp = await client.GetAsync("/api/artist/"+id.ToString());
+                    if (resp.IsSuccessStatusCode)
+                    {
+                        artist = await resp.Content.ReadAsAsync<ArtistViewModel>();
+                    }
+                }
+            } 
+            return View(artist);
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        [HttpPost]
+        [Route("Store")]
+        public async Task<IActionResult> Store(ArtistViewModel artist)
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            using(var client = new HttpClient())
+            {
+                var content = new StringContent(JsonConvert.SerializeObject(artist), Encoding.UTF8, "application/json");
+                client.BaseAddress = new Uri("http://localhost:5000");
+                var resp = await client.PostAsync("/api/artist", content);
+                if (resp.IsSuccessStatusCode)
+                {
+                    return Redirect("/");
+                }
+            }
+            return View();
         }
     }
 }

@@ -1,0 +1,43 @@
+@model Models.ArtistViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<form method="post" action="/store">
+<div class="">
+    <div>
+        <input type="hidden" asp-for="ID">
+        <p>Album Name</p>
+        <input type="text" asp-for="AlbumName"/>
+    </div>
+    <div>
+        <p>Artist Name</p>
+        <input type="text" asp-for="ArtistName"/>
+    </div>
+    <div>
+        <p>Image URL</p>
+        <input type="text" asp-for="ImageURL"/>
+    </div>
+    <div>
+        <p>Date Release</p>
+        <input type="date" asp-for="ReleaseDate" id="ReleaseDate"/>
+    </div>
+    <div>
+        <p>Sample Audio</p>
+        <input type="text" asp-for="SampleURL"/>
+    </div>
+    <div>
+        <p>Price</p>
+        <input type="number" asp-for="Price"/>
+    </div>
+</div>
+<button type="submit">Submit</button>
+</form>
+<script type="text/javascript">
+    $(function(){
+        $("#ReleaseDate").datepicker();
+    })
+</script>

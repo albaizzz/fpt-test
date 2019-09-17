@@ -28,3 +28,5 @@
 /home/albaizzz/Documents/project/dotnetcore/fpt-test/web/obj/Debug/netcoreapp2.2/web.dll
 /home/albaizzz/Documents/project/dotnetcore/fpt-test/web/obj/Debug/netcoreapp2.2/web.pdb
 /home/albaizzz/Documents/project/dotnetcore/fpt-test/web/obj/Debug/netcoreapp2.2/web.csproj.CopyComplete
+/home/albaizzz/Documents/project/dotnetcore/fpt-test/web/obj/Debug/netcoreapp2.2/Razor/Views/Artist/Index.g.cshtml.cs
+/home/albaizzz/Documents/project/dotnetcore/fpt-test/web/obj/Debug/netcoreapp2.2/Razor/Views/Home/Form.g.cshtml.cs
