@@ -1,0 +1,14 @@
+/home/albaizzz/Documents/project/dotnetcore/fpt-test/api/bin/Debug/netcoreapp2.2/api.deps.json
+/home/albaizzz/Documents/project/dotnetcore/fpt-test/api/bin/Debug/netcoreapp2.2/api.runtimeconfig.json
+/home/albaizzz/Documents/project/dotnetcore/fpt-test/api/bin/Debug/netcoreapp2.2/api.runtimeconfig.dev.json
+/home/albaizzz/Documents/project/dotnetcore/fpt-test/api/bin/Debug/netcoreapp2.2/api.dll
+/home/albaizzz/Documents/project/dotnetcore/fpt-test/api/bin/Debug/netcoreapp2.2/api.pdb
+/home/albaizzz/Documents/project/dotnetcore/fpt-test/api/obj/Debug/netcoreapp2.2/api.csprojAssemblyReference.cache
+/home/albaizzz/Documents/project/dotnetcore/fpt-test/api/obj/Debug/netcoreapp2.2/api.csproj.CoreCompileInputs.cache
+/home/albaizzz/Documents/project/dotnetcore/fpt-test/api/obj/Debug/netcoreapp2.2/api.RazorAssemblyInfo.cache
+/home/albaizzz/Documents/project/dotnetcore/fpt-test/api/obj/Debug/netcoreapp2.2/api.RazorAssemblyInfo.cs
+/home/albaizzz/Documents/project/dotnetcore/fpt-test/api/obj/Debug/netcoreapp2.2/api.AssemblyInfoInputs.cache
+/home/albaizzz/Documents/project/dotnetcore/fpt-test/api/obj/Debug/netcoreapp2.2/api.AssemblyInfo.cs
+/home/albaizzz/Documents/project/dotnetcore/fpt-test/api/obj/Debug/netcoreapp2.2/api.RazorTargetAssemblyInfo.cache
+/home/albaizzz/Documents/project/dotnetcore/fpt-test/api/obj/Debug/netcoreapp2.2/api.dll
+/home/albaizzz/Documents/project/dotnetcore/fpt-test/api/obj/Debug/netcoreapp2.2/api.pdb
